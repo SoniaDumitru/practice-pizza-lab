@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PizzaList from './Components/PizzaList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    pizzas: [],
+  }
+
+  componentDidMount() {
+    return fetch("http://localhost:3000/pizzas")
+      .then(res => res.json())
+      .then(pizzas => this.setState({ pizzas: pizzas }))
+  }
+
+  render() {
+    return (
+      <>
+        <h1 className="text-center">Welcome to Pizzeria</h1>
+        <PizzaList pizzas={this.state.pizzas}/>
+      </>
+    );
+  }
 }
 
 export default App;
