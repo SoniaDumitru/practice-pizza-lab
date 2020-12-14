@@ -10,4 +10,4 @@ When the form is submitted, the information should be reflected in your table an
 
 # Demo Solution: 
 
-![alt-text](https://github.com/SoniaDumitru/practice-pizza-lab/blob/master/ezgif.com-gif-maker.gif)
+![alt-text](https://github.com/SoniaDumitru/practice-pizza-lab/blob/master/pizzeria.gif)
