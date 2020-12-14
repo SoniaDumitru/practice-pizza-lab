@@ -2,15 +2,15 @@
   "pizzas": [
     {
       "id": 1,
-      "topping": "Plainnn",
-      "size": "Large",
-      "vegetarian": false
+      "topping": "Plain",
+      "size": "Small",
+      "vegetarian": true
     },
     {
       "id": 2,
-      "topping": "Pepperoni",
-      "size": "Medium",
-      "vegetarian": true
+      "topping": "Pepperoni with Cheese",
+      "size": "Large",
+      "vegetarian": false
     },
     {
       "id": 3,
