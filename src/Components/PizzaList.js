@@ -10,7 +10,7 @@ const PizzaList = ({ pizzas, editPizza }) => {
         />
     ));
     return(
-        <table className='table table-striped'>
+        <table className='table table-striped' id='table'>
             <thead>
                 <th scope='col'>Topping</th>
                 <th scope='col'>Size</th>
